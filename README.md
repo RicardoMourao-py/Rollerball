@@ -1,7 +1,14 @@
 # Rollerball
-Jogo feito com as ferramentas do Unity integrado com scripts em C#.
 
-## Referências
+Created by: Ricardo Mourão
+
+Github rep: https://github.com/RicardoMourao-py/Rollerball
+
+This game was based on Unity's "Roll a Ball" tutorial. With this, it was possible to improve the functionalities for good user usability.
+
+It consists of a football game, in which the player has to escape the marker and get as many points as possible.
+
+References:
 
 - https://www.youtube.com/watch?v=zc8ac_qUXQY
 - https://learn.unity.com/project/roll-a-ball
