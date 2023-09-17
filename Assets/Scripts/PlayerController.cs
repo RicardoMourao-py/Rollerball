@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     public PlayAgain PlayAgainScreen;
     private float timeLeft; // Tempo restante
     private bool isGameOver; // Indicador de término do jogo
-    public float gameTime = 60.0f; // Duração total do jogo em segundos
+    public float gameTime = 25f;  // Duração total do jogo em segundos
     public Text timeText;
 
     private Rigidbody rb;
