@@ -10,6 +10,7 @@ public class EnemyController : MonoBehaviour
     NavMeshAgent agent;
     public PlayerController playerController;
     public PlayAgain PlayAgainScreen;
+    private AudioSource pop;
 
     public void PlayAgain()
     {
@@ -18,6 +19,7 @@ public class EnemyController : MonoBehaviour
 
     void Start()
     {
+        pop = GetComponent<AudioSource>();
         agent = GetComponent<NavMeshAgent>();
         if (target == null)
             target = GameObject.FindGameObjectWithTag("Player");
@@ -31,6 +33,7 @@ public class EnemyController : MonoBehaviour
     public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player")
+            pop.Play();
             PlayAgain();
     }
 }

@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public float gameTime = 25f;  // Duração total do jogo em segundos
     public Text timeText;
 
+    private AudioSource pop;
     private Rigidbody rb;
     public int count;
     private float movementX;
@@ -31,6 +32,8 @@ public class PlayerController : MonoBehaviour
     {
         timeLeft = gameTime;
         isGameOver = false;
+        pop = GetComponent<AudioSource>();
+
         rb = GetComponent<Rigidbody>();
         count = 0;
     
@@ -69,7 +72,7 @@ public class PlayerController : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             count++;
-
+            pop.Play();
             SetCountText();
         }
         
