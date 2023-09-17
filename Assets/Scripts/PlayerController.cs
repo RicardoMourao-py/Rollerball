@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     public Text timeText;
 
     private Rigidbody rb;
-    private int count;
+    public int count;
     private float movementX;
     private float movementY;
 
@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
         isGameOver = false;
         rb = GetComponent<Rigidbody>();
         count = 0;
-
+    
         SetCountText();
         winTextObject.SetActive(false);
     }
@@ -49,10 +49,10 @@ public class PlayerController : MonoBehaviour
     private void SetCountText()
     {
         countText.text = "Points: " + count.ToString();
-        if(count >= 6)
+        if(count >= 10)
         {
-            winTextObject.SetActive(true); // TODO: verificar como aparecer na tela
-            PlayAgain();       // TODO: mudar lógica se houver tempo
+            winTextObject.SetActive(true);
+            PlayAgain();       
         }
     }
 
