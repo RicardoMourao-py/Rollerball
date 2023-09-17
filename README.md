@@ -1,8 +1,10 @@
 # Rollerball
+  
+![ball](https://github.com/RicardoMourao-py/Rollerball/assets/72896483/abe52ef6-7513-4ed2-98b5-fb914868aacc)
 
 Created by: Ricardo Mourão
 
-Github rep: https://github.com/RicardoMourao-py/Rollerball
+Itch.io: https://ricardomourao-py.itch.io/rollaball
 
 This game was based on Unity's "Roll a Ball" tutorial. With this, it was possible to improve the functionalities for good user usability.
 
